@@ -1,10 +1,5 @@
 @charset "UTF-8";
-html, body {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,10 +16,17 @@ time, mark, audio, video {
 	margin: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 	vertical-align: baseline;
 	list-style-type: none;
 	display: inline;
+}
+html , body{
+	position: absolute;
+	width: 100%;
+	display: block;
+	left: auto;
+	right: auto;
 }
 
 #landing {
@@ -60,41 +62,39 @@ time, mark, audio, video {
 	height: 60px;
 	background-color: #BEBEBE;
 	padding: 0;
-	line-height: 40px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 	position: relative;
 }
 #navbar ul {
 	padding: 0;
 	margin: 0;
 	float: right;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	height: 60px;
 	line-height: 60px;
+	display: table;
 }
 #navbar ul li {
-	margin: 0;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-left: 0;
+	margin-bottom: 0;
 	padding: 0;
 	display: inline-block;
-	width: 70px;
-	vertical-align: middle;
+	width: 63px;
 	text-align: center;
-	height: 80px;
+	height: 60px;
 }
 #navbar ul li a {
-	display: block;
 	margin: 0;
 	padding: 0;
-	vertical-align: middle;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
+	height: 60px;
+	display: block;
 }
 #navbar #headlogo  {
 	height: 60px;
@@ -102,4 +102,43 @@ time, mark, audio, video {
 	left: 30px;
 	position: relative;
 	line-height: 60px;
+}
+.main {
+	position: relative;
+	width: 80%;
+	max-width: 1080px;
+	min-width: 600px;
+	background-color: #EEEEEE;
+	left: auto;
+	right: auto;
+	display: block;	
+}
+.primary {
+	float: left;
+	width: 45%;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+	right: auto;
+	position: relative;
+	left: auto;
+}
+.secondary {
+	float: right;
+	width: 35%;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+	left: auto;
+	right: auto;
+}
+.secondary ul  {
+	list-style-type: armenian;
+}
+.secondary ul li {
+	list-style-type: disc;
+	display: list-item;
+	padding-bottom: 10px;
 }

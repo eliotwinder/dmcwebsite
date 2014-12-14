@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DMC</title>
+<link href="styles/dmcstyles.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function() {
+    $('.sidelist').hide();
+    $('.sidelinks li').hover( function(){
+            $( this ).children().stop().slideDown();
+        },
+        function(){
+            $( this ).children().stop().slideUp();
+        });
+   
+}); // end ready
+</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+            <div id="topphoto"><img src="images/bannerlogo.png" width="960" height="268" alt=""/></div>
+            <div id="title"><span id="titletext">David Martin Cohen:</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Razor Sharp Content for<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Cutting Edge Companies</div>
+        </div>
+            
+        <div id="left">
+        	<h2>Portfolio:</h2>
+        		<ul class="sidelinks">
+                	<li>Blog Posts
+                    	<ul class="sidelist">
+                        	<li>Link 1</li>
+                        	<li>Link 2</li>
+                        	<li>Link 3</li>
+                        </ul>
+                    </li>
+                    <li>SEO &amp; Marketing
+                    	<ul class="sidelist">
+                        	<li>Link 1</li>
+                        	<li>Link 2</li>
+                        	<li>Link 3</li>
+                    </li>
+                        </ul>
+                	<li>Press Releases
+                    	<ul class="sidelist">
+                        	<li>Link 1</li>
+                        	<li>Link 2</li>
+                        	<li>Link 3</li>
+                    </li>    
+                        </ul>
+                </ul>
+        </div>
+        
+        <div id="right">
+        	<h2>Razor Sharp Content for Cutting Edge Companies</h2>
+                <p>Every startup company with a brilliant idea has one major challenge: letting the world know about it.</p>
+                
+                I write content and copy that helps startups create clear, powerful messaging which resonates with tech-savvy people and early adopters.  Every enterprise has a unique message, and I tailor their content to best reflect that.
+                
+                <ul>
+                	<li>I helped 1Pel, a digital advertising company, connect with marketers by crafting clear, straightforward messages that established 1Pel’s credibility in the eyes of clients.</li>
+                    <li>I helped IncJar, a business development angel, connect with innovative college grads by creating funny, edgy copy that demonstrated how IncJar provides early-stage companies with a fantastic opportunity to grow.</li>
+                	<li>I helped Aerial Atlas, an up-and-coming real estate photography company specializing in aerial cinematography, fine tune their business plan so they can make their dreams take flight.</li>
+                </ul>
+              	<p>If you’re interested in finding out more about how I can help let the world in on the secret that is your start-up company, visit my why me? page.</p> 
+			</div>
+		
+</div>
+</body>
+</html>
