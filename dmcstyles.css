@@ -17,9 +17,12 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	vertical-align: baseline;
 	list-style-type: none;
-	display: inline;
+	display: inline-block;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 html , body{
 	position: absolute;
@@ -76,13 +79,9 @@ html , body{
 	display: table;
 }
 #navbar ul li {
-	margin-top: 0;
-	margin-right: 20px;
-	margin-left: 0;
-	margin-bottom: 0;
 	padding: 0;
 	display: inline-block;
-	width: 63px;
+	width: 104px;
 	text-align: center;
 	height: 60px;
 }
@@ -109,36 +108,55 @@ html , body{
 	max-width: 1080px;
 	min-width: 600px;
 	background-color: #EEEEEE;
-	left: auto;
-	right: auto;
-	display: block;	
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 .primary {
-	float: left;
-	width: 45%;
-	margin-top: 25px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-	margin-left: 25px;
-	right: auto;
-	position: relative;
-	left: auto;
+	display: inline-block;
+	width: 50%;
+	margin: 0 auto;
+	padding: 25px;
+	vertical-align: top;
+	text-align: justify;
 }
+
 .secondary {
-	float: right;
-	width: 35%;
-	margin-top: 25px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-	margin-left: 25px;
-	left: auto;
-	right: auto;
+	display: inline-block;
+	list-style-position: inside;
+	width: 50%;
+	margin: 0 auto;
+	padding: 25px;
+	vertical-align: top;
+	text-align: justify;
 }
-.secondary ul  {
-	list-style-type: armenian;
-}
+
 .secondary ul li {
 	list-style-type: disc;
-	display: list-item;
 	padding-bottom: 10px;
+	display: list-item;
+}
+.main .primary h1 {
+}
+#landingtext {
+	position: absolute;
+	top: 16%;
+	/* [disabled]left: 50%; */
+	/* [disabled]right: 50%; */
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+#landingtitle {
+	font-style: italic;
+	font-size: xx-large;
+	color: #FFFFFF;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	text-shadow: 0px 0px 159px;
+}
+#landingsubtitle {
+	margin-top: 20px;
 }
